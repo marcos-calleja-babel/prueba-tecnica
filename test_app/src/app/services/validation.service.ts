@@ -9,7 +9,6 @@ export class ValidationService {
   constructor() { }
 
   getValidationMessage(validationName: string, validationValue?: any) {
-    console.log(validationName);
     const validationMessages = {
       'required': 'Campo requerido',
       'email': 'Email inválido',
