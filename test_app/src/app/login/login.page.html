@@ -15,6 +15,7 @@
                       placeholder="Email">
                     </ion-input>
                   </ion-item>
+                  <validation-messages [control]="loginForm.controls.email" [enable]="loginSubmit"></validation-messages>
                 </ion-col>
               </ion-row>
               <ion-row>
@@ -26,6 +27,7 @@
                       placeholder="Contraseña">
                     </ion-input>
                   </ion-item>
+                  <validation-messages [control]="loginForm.controls.password" [enable]="loginSubmit"></validation-messages>
                 </ion-col>
               </ion-row>
               <ion-row>

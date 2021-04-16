@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
+import { ValidationMessagesComponent } from '../components/validation-messages/validation-messages.component';
 
 @NgModule({
   imports: [
@@ -14,8 +15,8 @@ import { LoginPage } from './login.page';
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule    
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage, ValidationMessagesComponent]
 })
 export class LoginPageModule {}
