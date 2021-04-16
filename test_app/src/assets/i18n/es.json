@@ -1,0 +1,8 @@
+{
+    "LOGIN_TITLE" : "Prueba técnica",
+    "REMEMBER": "Recordar",
+    "ACCESS": "Acceder",
+    "REQUIRED_FIELD": "Campo requerido",
+    "INVALID_EMAIL": "Email inválido",
+    "MIN_LENGTH": "Mínimo {{length}} carácteres"    
+}

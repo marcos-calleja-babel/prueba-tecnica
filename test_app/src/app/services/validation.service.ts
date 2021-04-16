@@ -1,19 +1,20 @@
 import { Injectable } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ValidationService {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   getValidationMessage(validationName: string, validationValue?: any) {
     const validationMessages = {
-      'required': 'Campo requerido',
-      'email': 'Email inválido',
-      'invalidEmail': "Email inválido",
-      'minlength': `Mínimo ${validationValue.requiredLength} carácteres`
+      'required': this.translate.instant('REQUIRED_FIELD'),
+      'email': this.translate.instant('INVALID_EMAIL'),
+      'invalidEmail': this.translate.instant('INVALID_EMAIL'),
+      'minlength': this.translate.instant('MIN_LENGTH', {'length': validationValue.requiredLength}),
     }
     return validationMessages[validationName] ? validationMessages[validationName] : undefined;
   }

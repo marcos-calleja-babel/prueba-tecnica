@@ -8,6 +8,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
 import { ValidationMessagesComponent } from '../components/validation-messages/validation-messages.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ValidationMessagesComponent } from '../components/validation-messages/v
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    ReactiveFormsModule    
+    ReactiveFormsModule,
+    TranslateModule.forChild()
   ],
   declarations: [LoginPage, ValidationMessagesComponent]
 })
