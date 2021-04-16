@@ -1,7 +1,7 @@
 {
   "name": "test_app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "marcos.calleja",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -58,5 +58,5 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.0.2"
   },
-  "description": "An Ionic project"
+  "description": "Prueba tecnica"
 }
