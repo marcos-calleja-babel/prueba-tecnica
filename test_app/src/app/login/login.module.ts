@@ -9,6 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { ValidationMessagesComponent } from '../components/validation-messages/validation-messages.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { ShowOnDirective } from '../directives/show-on.directive';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { TranslateModule } from '@ngx-translate/core';
     ReactiveFormsModule,
     TranslateModule.forChild()
   ],
-  declarations: [LoginPage, ValidationMessagesComponent]
+  declarations: [LoginPage, ValidationMessagesComponent, ShowOnDirective]
 })
 export class LoginPageModule {}

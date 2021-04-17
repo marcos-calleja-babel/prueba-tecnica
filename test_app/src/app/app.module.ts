@@ -25,7 +25,8 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: createTranslateLoader,
         deps: [HttpClient]
       }
-    })],
+    })
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, HttpClient],
   bootstrap: [AppComponent],
 })
