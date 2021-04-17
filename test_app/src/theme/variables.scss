@@ -239,3 +239,9 @@
 ion-button {
   text-transform: unset;
 }
+
+:root {
+  ion-input, ion-label, ion-button {
+    font-size: 18px !important;
+  }
+}
