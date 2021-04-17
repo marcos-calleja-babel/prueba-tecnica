@@ -39,7 +39,6 @@ export class ShowOnDirective implements OnDestroy {
   ) {}
 
   updateView = ({ matches }: BreakpointState) => {
-    console.log(matches);
     if (matches && !this.viewContainerRef.length) {
       this.viewContainerRef.createEmbeddedView(this.templateRef);
     } else if (!matches && this.viewContainerRef.length) {
