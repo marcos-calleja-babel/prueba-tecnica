@@ -1,9 +1,9 @@
-<ion-content class="content">
+<ion-content class="container">
   <ion-grid>
     <ion-row class="ion-justify-content-center">
       <ion-col class="ion-align-self-center ion-text-center" size-lg="6" size-md="12">
         <img *showOn="'mobile'" class="image-cropped" src="../../assets/images/logo.webp" />
-        <ion-card>
+        <ion-card class="form-container">
           <img *showOn="'web'" class="image-cropped" src="../../assets/images/logo.webp" />
           <ion-card-header *showOn="'web'">{{ 'LOGIN_TITLE' | translate }}</ion-card-header>
           <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
