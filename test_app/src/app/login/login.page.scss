@@ -1,0 +1,29 @@
+ion-content {
+  --background: white url(../../assets/images/background.webp) center top
+    no-repeat;
+  --background-size: cover;
+}
+
+.image-cropped {
+    object-fit: cover;
+    object-position: left;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+}
+
+ion-card-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.access-button-mobile {
+  margin: 0px;
+}
+
+.access-button-web {
+  width: 200px;
+  margin-bottom: 25px;
+  color: black;
+}
