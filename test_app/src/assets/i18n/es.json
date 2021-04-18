@@ -4,5 +4,7 @@
     "ACCESS": "Acceder",
     "REQUIRED_FIELD": "Campo requerido",
     "INVALID_EMAIL": "Email inválido",
-    "MIN_LENGTH": "Mínimo {{length}} carácteres"    
+    "MIN_LENGTH": "Mínimo {{length}} carácteres",
+    "EMAIL": "Email",
+    "PASSWORD": "Contraseña"
 }
