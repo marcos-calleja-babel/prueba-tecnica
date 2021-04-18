@@ -234,3 +234,14 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+/* Test App custom styles */
+ion-button {
+  text-transform: unset;
+}
+
+:root {
+  ion-input, ion-label, ion-button {
+    font-size: 18px !important;
+  }
+}

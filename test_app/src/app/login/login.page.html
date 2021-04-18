@@ -1,0 +1,51 @@
+<ion-content class="content">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col class="ion-align-self-center ion-text-center" size-lg="6" size-md="12">
+        <img *showOn="'mobile'" class="image-cropped" src="../../assets/images/logo.webp" />
+        <ion-card>
+          <img *showOn="'web'" class="image-cropped" src="../../assets/images/logo.webp" />
+          <ion-card-header *showOn="'web'">{{ 'LOGIN_TITLE' | translate }}</ion-card-header>
+          <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <ion-card-content>
+              <ion-row>
+                <ion-col>
+                  <ion-item tappable>
+                    <ion-input formControlName="email" name="email" type="email" placeholder="{{'EMAIL' | translate}}">
+                    </ion-input>
+                    <ion-icon name="person-outline" slot="start"></ion-icon>
+                  </ion-item>
+                  <validation-messages [control]="loginForm.controls.email" [enable]="loginSubmit">
+                  </validation-messages>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-item tappable>
+                    <ion-input formControlName="password" name="password" type="password" placeholder="{{'PASSWORD' | translate}}">
+                    </ion-input>
+                    <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+                  </ion-item>
+                  <validation-messages [control]="loginForm.controls.password" [enable]="loginSubmit">
+                  </validation-messages>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-item lines="none">
+                    <ion-label>{{ 'REMEMBER' | translate }}</ion-label>
+                    <ion-toggle formControlName="remember" tappable></ion-toggle>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+            <ion-button *showOn="'mobile'" class="access-button-mobile" type="submit" expand="full" fill="solid"
+              size="large">{{ 'ACCESS' | translate }}</ion-button>
+            <ion-button *showOn="'web'" class="access-button-web" type="submit" shape="round" fill="outline" size="large">
+              {{ 'ACCESS' | translate }}</ion-button>
+          </form>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
